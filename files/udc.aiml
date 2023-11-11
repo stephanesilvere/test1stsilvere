@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
   <category>
-    <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    <pattern>bonjour</pattern>
+    <template>bonjour, en quoi puis je vous aider ?</template>
   </category>
+
+<category>
+    <pattern>je souhaite avoir des renseignements sur vos formations</pattern>
+    <template>nous proposons 4 domaines de formation, choisissez parmi ces 4 propositions.
+<ol>
+    <li>hygiene</li>
+    <li>securite</li>
+    <li>gestion</li>
+    <li>postures</li>
+</ol></template>
+</category>
+
 </aiml>
