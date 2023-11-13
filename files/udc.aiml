@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>hello</pattern>
+    <template>hello, how can help you?</template>
+  </category>
+<category>
+    <pattern>i am looking for a restaurant</pattern>
+    <template>what kind of restaurant, choose a number
+<ol>
+    <li>french</li>
+    <li>chinese</li>
+        <li>others</li>
+</ol></template>
+</category>
+<category>
+    <pattern>1</pattern>
+    <template>chez jacky</template>
+</category>
+<category>
+    <pattern>2</pattern>
+    <template>chez wong</template>
+</category>
+
+<category>
+    <pattern>3</pattern>
+    <template>at gino s, good italian or manuelito nice spanish</template>
+</category>
+
+</aiml>
