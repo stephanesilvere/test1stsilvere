@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>bonjour</pattern>
+    <template>bonjour, en quoi puis je vous aider ?</template>
+  </category>
+
+ 
+<pattern>hygiene</pattern>
+<template>renseignement sur nos formations hygiene</template>
+    
+<category>
+    <pattern>je veux manger dans un restaurant sympa</pattern>
+    <template>quel genre de cuisine, choisissez le numero suivant votre choix ?
+<ol>
+    <li>Français </li>
+    <li>etranger</li>
+    </ol></template>
+</category>
+{{#choix}}
+   {{#si utilisateur_input "1"}}
+       Réponse pour l'Option 1
+   {{/si}}
+   {{#si utilisateur_input "2"}}
+       Réponse pour l'Option 2
+   {{/si}}
+   {{#sinon}}
+       Réponse par défaut si aucune option ne correspond
+   {{/sinon}}
+{{/choix}}
+
+<category>
+    <pattern>1</pattern>
+    <template>Je vous propose "chez jacky"</template>
+</category>
+
+<category>
+    <pattern>2
+</pattern>
+    <template>Je vous propose "chez wong"</template>
+</category>
+
+<category>
+    <pattern>comment est jacky</pattern>
+    <template>jacky est français</template>
+</category>
+<category>
+    <pattern>comment est wong</pattern>
+    <template>wong est chinois</template>
+</category>
+</aiml>
